@@ -22,7 +22,7 @@ const getStats = async () => {
         let req = `https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd`;
         const res = await axios.get(req);
         ethdata = res.data;
-        client.user.setActivity(`${ethdata.ethereum.usd}  `);
+        client.user.setActivity(`$${ethdata.ethereum.usd} `);
     } catch (err) {
         console.log(err);
     }
