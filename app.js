@@ -28,7 +28,7 @@ const getStats = async () => {
         console.log(err);
     }
 }
-setInterval(getStats, 10 * 10000);
+setInterval(getStats, 10 * 1000);
 client.on("messageCreate", (message) => {
 if (message.author.bot == false){
  
