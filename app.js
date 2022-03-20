@@ -13,7 +13,7 @@ const client = new Client({
 
 client.on("ready", () => {
     console.log("this bot is now online " +client.user.tag)
-    //client.user.setPresence({status: "dnd", activities: [{type: 'WATCHING', name: `⛽:  gweei`}] });
+    //client.user.setPresence({status: "dnd", activities: [{type: 'WATCHING',  name: `⛽:  gweei`}] gitkrakenTest });
     //client.user.setActivity(`dwjkahdjhwajkdwajdaw`)
     getStats();
 })
@@ -28,7 +28,7 @@ const getStats = async () => {
         console.log(err);
     }
 }
-setInterval(getStats, 10 * 1000);
+setInterval(getStats, 10 * 1000); 
 client.on("messageCreate", (message) => {
 if (message.author.bot == false){
  
