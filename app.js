@@ -13,7 +13,7 @@ const client = new Client({
 
 client.on("ready", () => {
     console.log("this bot is now online " +client.user.tag)
-    //client.user.setPresence({status: "dnd", activities: [{type: 'WATCHING',  name: `⛽:  gweei`}] gitkrakenTesthahaha });
+    //client.user.setPresence({status: "dnd", activities: [{type: 'WATCHING',  name: `⛽:  gweei`}] vscode test });
     //client.user.setActivity(`dwjkahdjhwajkdwajdaw`)
     getStats();
 })
